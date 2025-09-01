@@ -94,6 +94,7 @@
             if (dateTo && job.date > dateTo) return false;
             if (!q) return true;
             return (
+              job.year.toLowerCase().includes(q) ||
               job.plate.toLowerCase().includes(q) ||
               job.make.toLowerCase().includes(q) ||
               job.model.toLowerCase().includes(q) ||
