@@ -39,7 +39,7 @@
         { id: "alternator", name: "Alternator", color: "bg-blue-200" },
       ];
 
-      const uid = (p="id") => p + "_" + Math.random().toString(36).slice(2,9);
+      const uid =5 (p="id") => p + "_" + Math.random().toString(36).slice(2,9);
       const formatDateISO = (d) => new Date(d).toISOString().slice(0,10);
       const csvEscape = (v) => {
         if (v == null) return "";
